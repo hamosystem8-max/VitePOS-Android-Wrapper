@@ -1,3 +1,8 @@
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
 android {
     namespace = "com.independentpostools.viteposwrapper"
     compileSdk = 35
@@ -6,8 +11,8 @@ android {
         applicationId = "com.independentpostools.viteposwrapper"
         minSdk = 26
         targetSdk = 35
-        versionCode = 4
-        versionName = "0.2.1"
+        versionCode = 5
+        versionName = "0.2.2"
     }
 
     compileOptions {
@@ -22,4 +27,9 @@ android {
     buildFeatures {
         viewBinding = false
     }
+}
+
+dependencies {
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
